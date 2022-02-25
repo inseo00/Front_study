@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    
+        .row{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .item{
+            width: 80%;
+            margin: auto;
+        }
+        .item-title{
+            text-align: center;
+        }
+        .item-title h1{
+            color: brown;
+            margin-top: 30px;
+            font-size: 40px;
+        }
+        .item img{
+            margin-top: 15px;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        .item-col{
+            flex-basis: 45%;
+            position: relative;
+        }
+        .layer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .layer:hover{
+            margin-top: 15px;
+            background-color: rgba(232,232,232,0.8);
+        }
+        .layer h3{
+            font-size: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            color: black;
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: 1s;
+        }
+        .layer:hover h3{
+            opacity: 1;
+            bottom: 40%;
+        }
+        .layer h3 a{
+            text-decoration: none;
+            color: darkred;
+        }
+        body{
+            background-image: url(from/blood6.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="item">
+            <div class="item-title">
+                <h1>Bloodbone Item</h1>
+            </div>
+            <div class="row">
+                <div class="item-col">
+                    <img src="from/weapon.jpg" alt="">
+                    <div class="layer">
+                        <h3><a href="https://bloodborne.wiki.fextralife.com/Weapons" target="_blank">무기</a></h3>
+                    </div>
+                </div>
+                <div class="item-col">
+                    <img src="from/amor.jpg" alt="">
+                    <div class="layer">
+                        <h3><a href="https://bloodborne.wiki.fextralife.com/Attire">방어구</a></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

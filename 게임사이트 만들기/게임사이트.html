@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .row{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .gallery{
+            width: 90%;
+            margin: auto;
+            height: auto; 
+            padding: 15px;
+        }
+        .gallery-title{
+            text-align: center;
+        }
+        .gallery-title h1{
+            color: crimson;
+            font-size: 25px;
+        }
+        .gallery-title p{
+            font-size: 15px;
+            color: aliceblue;
+        }
+        .gallery-col img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        .gallery-col{
+            flex-basis: 30%;
+            position: relative;
+        }
+        .layer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .layer:hover{
+            background-color: rgba(232,232,232,0.8);
+        }
+        .layer h3{
+            font-size: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            color: black;
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: 1s;
+        }
+        .layer:hover h3{
+            opacity: 1;
+            bottom: 40%;
+        }
+        body { padding: 0px; 
+            margin: 0px;
+            background-image: url(from/blood2.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+      footer{
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-around;
+          text-align: center;
+      }
+      .layer a{
+          text-decoration: none;
+          color: black;
+      }
+    .pop-up{ 
+    background-color:#fff;
+    border-radius:15px;
+    color:#000;
+    display:none; 
+    padding:20px;
+    min-width:400px;
+    min-height: 180px;
+    margin-top: 20px;
+	}
+	.b-close{
+		cursor:pointer;
+		position:absolute;
+		right:10px;
+		top:5px;
+    }
+    .video img{
+        width: 100%;
+        height: 300px;
+        margin-top: 25px;
+        opacity: 0;
+    }
+    .video img:hover{
+        cursor: pointer;
+    }
+    </style>
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="jquery.bpopup-0.10.0.min.js"></script>
+    <script>
+        ;(function($) {
+            // DOM Ready
+           $(function() {
+               // Binding a click event
+               // From jQuery v.1.7.0 use .on() instead of .bind()
+               $('#my-img').bind('click', function(e) {
+           var self = $(this) //button
+           , content = $('.content'); 
+           $('element_to_pop_up').bPopup({
+               onOpen: function() {
+                   content.html(self.data('bpopup') || '');
+               },
+               onClose: function() {
+                   content.empty();
+               }
+           });
+                   // Prevents the default action to be triggered. 
+                   e.preventDefault();
+                   // Triggering bPopup when click event is fired
+                   $('#element_to_pop_up').bPopup();
+               });
+           });
+       })(jQuery);
+   </script>
+</head>
+<body>
+    <div class="container">
+    
+    <div class="video">
+	<img src="from/blood.jpg" id="my-img" alt="">
+	<!-- Element to pop up -->
+	<div class="pop-up" id="element_to_pop_up">
+		<a class="b-close">x</a>
+		<iframe width="640" height="360" src="블러드본 한글자막 스토리 트레일러.mp4" frameborder="0" allowfullscreen></iframe>
+		</div>
+    </div>
+        <section class="gallery">
+            <div class="gallery-title">
+                <h1>Bloodbone</h1>
+                <p>Hunt Your Nightmares.</p>
+            </div>
+            <div class="row">
+                <div class="gallery-col">
+                    <img src="from/blood3.jpg" alt="">
+                    <div class="layer">
+                        <h3><a href="item.html" target="_blank">장비</a></h3>
+                    </div>
+                </div>
+                <div class="gallery-col">
+                    <img src="from/blood4.jpg" alt="">
+                    <div class="layer">
+                        <h3>모션</h3>
+                    </div>
+                </div>
+                <div class="gallery-col">
+                  <img src="from/blood5.jpg" alt="">
+                    <div class="layer">
+                        <h3><a href="story.html" target="_blank">스토리</a></h3>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        <footer>
+            <div class="from">
+                <h2>제작</h2>
+                <h3>From Software</h3>
+            </div>
+            <div class="sony">
+                <h2>유통</h2>
+                <h3>Sony </h3>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
