@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakaopage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        .header {
+              position: relative;
+
+       }
+       .header-img {
+         position: absolute;
+           top: 30px;
+           left: 15px;          
+       }
+       .list {
+        display: flex;
+        justify-content: flex-end;
+       }
+       .list li {
+           margin: 30px 20px 0;
+           list-style: none;
+           font-weight: bold;
+       }
+       .content-box  {
+           margin-top: 15px;
+           position: relative;
+       }
+       .content-img {
+           position: absolute;
+           top: 50px;
+           width: 100%;
+           background-size: cover;
+            background-position: center;
+            padding-bottom: 80px;
+        }
+        .content-box {
+            text-align:  center;
+            display: flex;
+            justify-content: center;
+           
+            
+        }
+
+            .content-text h1 {
+                margin-top: 100px;
+                font-weight: bold;
+                font-size: 70px;
+            }
+            .content-text p {
+                font-size: 14px;
+            }
+            .textbox-row li {
+                border:solid transparent 1px;
+                background-color: #eee;
+                border-radius: 32px;
+                margin: 45px 20px 0;
+                padding: 15px;
+
+              
+            }
+         
+            .textbox-row li a {
+                font-weight: bold;
+                line-height: 33px;
+                font-size: 22px;
+            
+              
+
+            }
+            .textbox-row li {
+                list-style: none;
+                font-weight: bold;
+            }
+            .job-list {
+                display: flex;
+                justify-content:flex-start;
+                margin-left: 40px;
+                margin-left: 35px;
+
+            }
+            .job-list li:hover {
+                background-color: #f9e000;
+                transition: 0.5s;
+            }
+            .tech-box {
+                border: 1px transparent solid;
+                margin: 70px auto 0;
+                border-radius: 45px;
+            }
+            .tech-box p {
+                margin: 30px;
+                font-size: 30px;
+                font-weight: 800;
+            }
+            .tech-box a {
+                border: 1px black solid;
+                border-radius: 21px;
+                padding : 15px;
+                text-decoration: none;
+                color: white;
+                font-size: 8px;
+                background: black;
+            }
+            .tech-box img {
+                margin-top: 30px;
+            }
+            .tech-box:hover {
+                box-shadow: 5px 5px 5px 5px gray;
+                transition: 0.5s;
+                
+            }
+            select {
+             border: none;
+             float: right;
+             
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-img">
+                <img src="img_logo.png" alt="" width="107" height="24">
+            </div>
+                <ul class="list">
+                    <li> <a href="#"></a>카카오 생활</li>
+                    <li> <a href="#"></a>크루 이야기</li>
+                    <li> <a href="#"></a>진행중공고</li>
+                    <li> <a href="#"></a>지원안내</li>
+                    <li> <a href="#"></a>나의 지원서</li>
+                    <a href="#"><select name="items1" id="">
+                        <option value="로그인">로그인</option>
+                    </select></a>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="content-img">
+            <img src="contentbox_img.jpeg" alt="" width="100%">
+            <div class="content-text">
+                <h1>Join the krew</h1>
+                <br>카카오 크루는 우리의 일상을 더 좋게 만들고 싶은 멋진 동료입니다.</br>
+                <br>  다양한 생각을 자유롭게 나누며, 언제나 놀라운 결과를 만들어내죠.</br>
+                    당신도 세상을 바꾸고 싶나요? 카카오로 오세요!!</p>
+        </div>
+            <div class="textbox-row">
+                
+                <ul class="job-list">
+                    <li><a href="#"></a># 테크</li>
+                    <li><a href="#"></a># 서비스비즈</li>
+                    <li><a href="#"></a># 디자인</li>
+                    <li><a href="#"></a># 브랜드</li>
+                    <li><a href="#"></a># 스태프</li>
+                </ul>
+            </div>
+            <div class="tech-box">
+                <p>기술과 사람으로 더 나은 세상을 만듭니다.</p>
+                    <a href="#">카카오 문화 바로가기</a>
+                    <div class="img-check">
+                    <img src="listimg.png" alt="" width="50%" height="30%">
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

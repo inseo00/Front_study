@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>무신사 회원가입창</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /*배경*/
+    .login {
+      background-color: lightgray;
+    }
+    .container {
+      position: relative;
+    }
+    /*로고*/
+    .musinsa-img {
+      margin: 40px auto 0;
+      width: 95px;
+      height: 95px;
+    }
+
+    /*로그인 전체 창 CSS*/
+    .login-form {
+      background-color: white;
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 50px;
+      padding: 20px;
+    }
+    /*로그인 입력 창 CSS*/
+    .txt {
+      font-size: 14px;
+      width: 100%;
+      border: none;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+    /*로그인 창 hover 할 떄에 색상변경*/
+    .txt:hover {
+      transition: 0.5s;
+      background-color: lightgray;
+      cursor: pointer;
+    }
+    /*확인 창*/
+    .submit {
+      font-size: 14px;
+      width: 100%;
+      border: none;
+      background-color: #000;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+    }
+    .submit:hover {
+      cursor: pointer;
+    }
+    /*확인 창 2*/
+    .submit:nth-child(1) {
+      background-color: #f9e000;
+      color: black;
+    }
+    /*회원가입 및 텍스트 확인 */
+    .bottom-txt {
+      text-align: center;
+      color: #0078ff;
+      font-size: 16px;
+    }
+    /* 회원가입 submit 창*/
+    .join {
+      margin-left: 8px;
+      padding: 6px;
+      border-radius: 3px;
+      color: #0078ff;
+      border: 1px solid #0078ff;
+      text-decoration: none;
+    }
+    /* 회원가입 submit 창 hover*/
+    .join:hover {
+      background-color: lightgray;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    footer {
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+      height: 75px;
+      background-color: black;
+      bottom: 0;
+      color: whitesmoke;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="musinsa-img">
+        <img
+          src="무신사로고.jpg.crdownload"
+          alt="무신사"
+          width="150px"
+          height="100px"
+        />
+      </div>
+      <div class="login-form">
+        <form action="">
+          <input
+            type="text"
+            class="txt"
+            placeholder="아이디 입력"
+            width="300"
+            height="80"
+          />
+
+          <input
+            type="password"
+            class="txt"
+            placeholder="비밀번호 입력"
+            maxlength="10"
+            width="300"
+            height="80"
+          />
+          <input type="submit" class="submit" value="로그인" />
+
+          <div class="login-box">
+            <input type="submit" class="submit kakao" value="카카오 로그인" />
+            <input type="submit" class="submit" value="Apple 로그인" />
+          </div>
+        </form>
+      </div>
+      <span class="bottom-txt">
+        <p>가입만 해도 15% 할인 <a class="join" href="#">회원가입</a></p>
+      </span>
+    </div>
+    <footer>footer연습</footer>
+  </body>
+</html>
