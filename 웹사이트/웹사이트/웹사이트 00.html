@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(127, 76, 173);
+      }
+      .section {
+        margin: 50px auto 0;
+        width: 90%;
+        height: 2000px;
+      }
+      .title {
+        width: 100%;
+        height: auto;
+        margin-bottom: 70px;
+      }
+      h1 {
+        padding-top: 40px;
+      }
+      .title h1 {
+        font-size: 34px;
+        text-align: center;
+        color: white;
+      }
+      .row {
+        display: flex;
+        justify-content: space-around;
+      }
+      .item {
+        padding: 2% 6%;
+        text-align: center;
+        background-color: rgb(25, 21, 80);
+        color: white;
+        border-radius: 20px;
+      }
+      .item p {
+        font-size: 22px;
+      }
+      .item h2 {
+        margin: 20px 0 40px;
+        font-size: 36px;
+        font-weight: 500;
+      }
+      .item h2 span {
+        font-size: 18px;
+      }
+      .item ul {
+        text-align: left;
+        margin: 20px 0;
+      }
+      .item ul li {
+        margin: 15px 0;
+      }
+
+      .item button {
+        width: 100%;
+        padding: 14px 0;
+        background: transparent;
+        color: white;
+        font-size: 15px;
+        border: 1px solid rgb(161, 49, 49);
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 30px auto;
+        transition: 0.5s;
+      }
+      .item button:hover {
+        background-color: rgba(174, 255, 251, 0.842);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <div class="title">
+          <h1>choose your plan</h1>
+        </div>
+        <div class="row">
+          <div class="item">
+            <p>Starter</p>
+            <h2>19$ <span>/month</span></h2>
+            <ul>
+              <li>1 Wedsite</li>
+              <li>10 GB Disk Space</li>
+              <li>Free Email Address</li>
+              <li>Basic Wed Builder</li>
+              <li>No SSl Certificate</li>
+              <li>Limited Support</li>
+            </ul>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="item">
+            <p>Advanced</p>
+            <h2>29$ <span>/month</span></h2>
+            <ul>
+              <li>10 Wedsite</li>
+              <li>50 GB Disk Space</li>
+              <li>Free Email Address</li>
+              <li>Advanced Wed Builder</li>
+              <li>Free SSl Certificate</li>
+              <li>Unlimited Support</li>
+            </ul>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="item">
+            <p>Premium</p>
+            <h2>49$ <span>/month</span></h2>
+            <ul>
+              <li>100 Wedsite</li>
+              <li>100 GB Disk Space</li>
+              <li>Free Email Address</li>
+              <li>Advanced Wed Builder</li>
+              <li>Free SSl Certificate</li>
+              <li>Limited Support</li>
+            </ul>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
